@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/portfolio_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  mvc:
+    log-request-details: true
+  data:
+    rest:
+      detection-strategy: ANNOTATED
+  security:
+    filter:
+      order: 10
+
+logging.level.org.springframework.web: DEBUG  
+
+server.serlet.context-path: /api
