@@ -22,4 +22,4 @@ spring:
 
 logging.level.org.springframework.web: DEBUG  
 
-server.serlet.context-path: /api
+server.servlet.context-path: /api
