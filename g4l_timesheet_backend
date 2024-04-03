@@ -17,8 +17,6 @@ spring:
     filter:
       order: 10
 
-logging.level.org.springframework.web: DEBUG  
-
 server.servlet.context-path: /api
 
 application:
